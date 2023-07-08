@@ -1,6 +1,6 @@
 {
   "version": "0.1.1",
-  "download_path": "if (needUpdate) {
+  "download_path": """if (needUpdate) {
       Get.defaultDialog(
           title: '升级公告',
           content: UpdatePopup(text: responseJson['download_path']),
@@ -15,5 +15,5 @@
           onConfirm: () {
             Get.back();
           });
-    }"
+    }"""
 }
