@@ -1,19 +1,4 @@
 {
   "version": "0.1.1",
-  "download_path": """if (needUpdate) {
-      Get.defaultDialog(
-          title: '升级公告',
-          content: UpdatePopup(text: responseJson['download_path']),
-          contentPadding:
-              const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-          barrierDismissible: false,
-          onWillPop: () async {
-            return false;
-          },
-          textConfirm: '我知道啦',
-          confirmTextColor: Colors.white,
-          onConfirm: () {
-            Get.back();
-          });
-    }"""
+  "download_path": "if (needUpdate) {Get.defaultDialog(title: '升级公告',content: UpdatePopup(text: responseJson['download_path']),contentPadding:const EdgeInsets.symmetric(horizontal: 10, vertical: 5),barrierDismissible: false,"
 }
